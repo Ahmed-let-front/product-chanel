@@ -25,6 +25,9 @@ body {
   background-color: var(--mainColor, #f2ebe3);
   min-height: 100vh;
 }
+main {
+  position: relative;
+}
 .font-montrast {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -133,5 +136,8 @@ footer {
   footer {
     display: block;
     font-size: calc(var(--16px) + 2px);
+    position: absolute;
+    left: 10%;
+    bottom: -3rem;
   }
 }
