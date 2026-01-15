@@ -1,0 +1,137 @@
+/* start variabels */
+:root {
+  --mainColor: #f2ebe3;
+  --cardColor: #ffffff;
+  --secondColr: #6c7289;
+  --haedingColor: #1c232b;
+  --thirdColor: #3c8067;
+  --hover-efectColor: #1b4133;
+  --16px: calc(1rem + 2px);
+  --32px: calc(2rem + 4px);
+}
+/* end variabels */
+/* global values */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: calc(1rem - 2px);
+  line-height: 1.5;
+}
+body {
+  font-family: "Fraunces", serif;
+  background-color: var(--mainColor, #f2ebe3);
+  min-height: 100vh;
+}
+.font-montrast {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--secondColr, #6c7289);
+}
+.margin-block-end {
+  margin-block-end: var(--16px);
+}
+/* global values */
+/* product design mobile */
+.perfume-chanel {
+  margin-inline: var(--16px);
+  margin-block: var(--32px);
+  background-color: var(--cardColor, #ffffff);
+  padding-block-start: 0;
+  overflow: hidden;
+  max-inline-size: 568px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  .first-p {
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    font-size: var(--16px);
+  }
+  h1 {
+    line-height: 1;
+    color: var(--haedingColor, #1c232b);
+    font-size: calc(var(--32px) + 2px);
+  }
+}
+/* content */
+.product-content {
+  padding: calc(var(--16px) + 4px);
+  padding-block-start: 0;
+}
+/* cart-order */
+.order {
+  .price {
+    display: flex;
+    align-items: center;
+    gap: var(--16px);
+    .g-price {
+      color: var(--thirdColor, #3c8067);
+      font-size: var(--32px);
+      font-weight: 700;
+    }
+  }
+  .shoping-card {
+    background-color: var(--thirdColor, #3c8067);
+    padding: 15px 20px;
+    color: var(--cardColor, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    &:hover {
+      background-color: var(--hover-efectColor, #1b4133);
+      cursor: pointer;
+    }
+    p {
+      font-weight: 700;
+    }
+  }
+}
+/* img chanel */
+.image-of-product {
+  background-image: url("../images/image-product-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  background-position: center;
+}
+footer {
+  display: none;
+}
+/* meida for desktop */
+@media (min-width: 47rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .perfume-chanel {
+    margin-inline: 0;
+    margin-block: 0;
+    display: flex;
+  }
+  .product-content {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--32px);
+  }
+  .image-of-product {
+    background-image: url("../images/image-product-desktop.jpg");
+    margin-block-end: 0;
+    flex-basis: 50%;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 100%;
+  }
+  footer {
+    display: block;
+    font-size: calc(var(--16px) + 2px);
+  }
+}
