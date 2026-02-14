@@ -1,7 +1,7 @@
 # Frontend Mentor - Product preview card component
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
-
+## [Demo](https://ahmed-let-front.github.io/product-chanel/)
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
